@@ -4,7 +4,10 @@ import RoyCard from './RoyCard';
 
 class CardList extends Component {
     cardArray = robots.map((user, i) => {
-        return <RoyCard key={i} id={robots[i].id} name={robots[i].name} email={robots[i].email} />
+        return <RoyCard key={i}
+                        id={robots[i].id}
+                        name={robots[i].name}
+                        email={robots[i].email}/>
     })
     render() {
         return (
